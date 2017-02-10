@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Calendar;
 
+
 public class Main {
 
     public static void main(String[] args) throws IOException{
@@ -17,9 +18,11 @@ public class Main {
             mass[i] = new Person();
         }
 
-        mass[0].input();
-
-        mass[0].output();
+       for (Person x: mass)
+       {
+           x.input();
+           x.output();
+       }
 
 
     }
