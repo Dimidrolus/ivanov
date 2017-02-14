@@ -30,7 +30,7 @@ public class Test
         mass[4].department = Department.ITdep;
         mass[4].name = "Dimonchik";
 
-        for (int i=0; i<mass.length; i++)
+        for (int i=mass.length-1; i!=-1; i--)
         {
             mass[i].salary = (i+20)*100;
         }
