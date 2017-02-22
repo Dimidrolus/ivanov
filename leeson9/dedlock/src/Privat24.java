@@ -11,6 +11,8 @@ public class Privat24 {
         Thread thread3 = new Thread(new Transaction(bank3,bank1, 65));
         Thread thread4 = new Thread(new Transaction(bank1,bank3, 65));
         Thread thread5 = new Thread(new Transaction(bank2,bank3, 90));
+        Thread thread6 = new Thread(new Transaction(bank3,bank2, 20));
+
 
 
 
@@ -20,6 +22,7 @@ public class Privat24 {
             thread3.start();
             thread4.start();
             thread5.start();
+            thread6.start();
 
     }
  }

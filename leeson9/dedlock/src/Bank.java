@@ -12,8 +12,8 @@ public class Bank {
     }
 
     synchronized static void Tranfer(Bank sender, Bank getter, int summ, int transId) {
-        for (int i = 0; i < 10000; i++) {
-            System.out.println("Starting transaction from " + sender.name + " to " + getter.name + " transactionid is: " + transId*i);
+        for (int i = 0; i < 100000; i++) {
+            System.out.println("Starting transaction from " + sender.name + " to " + getter.name + " transactionid: " + transId*i);
             getter.safe = getter.safe + summ;
             sender.safe = sender.safe - summ;
             System.out.println("Transaction complete, " + summ + "UAH sended");
